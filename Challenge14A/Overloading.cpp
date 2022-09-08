@@ -26,12 +26,12 @@ Overloading::~Overloading()
 //member functions
 //------------------------------------------------------------------------
 void Overloading::get_memory_address() const{
-    std::cout << "The memory address of the array according to the data_array variable is:  " << data_array << std::endl;
+    std::cout << "The memory address of the array according to the data_array memeber variable is:  " << data_array << std::endl;
 }
 
-void Overloading::print_array(){
+void Overloading::print_array() const{
     
-    int *tmp_ptr {data_array};
+    const int *tmp_ptr {data_array};
     
     std::cout << "[ ";
     

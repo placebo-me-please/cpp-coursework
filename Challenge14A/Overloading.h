@@ -22,7 +22,7 @@ public:
 //member method signatures
 //------------------------------------------------------------------------
     void get_memory_address() const;
-    void print_array();
+    void print_array() const;
 };
 
 #endif // _OVERLOADING_

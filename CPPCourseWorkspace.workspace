@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="CPPCourseWorkspace" Database="" Version="10000">
+  <Project Name="Challenge1" Path="Challenge1/Challenge1.project" Active="No"/>
+  <Project Name="Challenge6" Path="Challenge6/Challenge6.project" Active="No"/>
+  <Project Name="Challenge7" Path="Challenge7/Challenge7.project" Active="No"/>
+  <Project Name="Challenge8" Path="Challenge8/Challenge8.project" Active="No"/>
+  <Project Name="Challenge9" Path="CPPCourseWorkspace/CPPCourseWorkspace.project" Active="No"/>
+  <Project Name="Challenge10" Path="Challenge10/Challenge10.project" Active="No"/>
+  <Project Name="Challenge11" Path="Challenge11/Challenge11.project" Active="No"/>
+  <Project Name="MiscTests" Path="MiscTests/MiscTests.project" Active="No"/>
+  <Project Name="Challenge12" Path="Challenge12/Challenge12.project" Active="No"/>
+  <Project Name="Challenge13" Path="Challenge13/Challenge13.project" Active="No"/>
+  <Project Name="Challenge13B" Path="Challenge13B/Challenge13B.project" Active="No"/>
+  <Project Name="Challenge14A" Path="Challenge14A/Challenge14A.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug">
+      <Environment/>
+      <Project Name="Challenge1" ConfigName="Debug"/>
+      <Project Name="Challenge6" ConfigName="Debug"/>
+      <Project Name="Challenge7" ConfigName="Debug"/>
+      <Project Name="Challenge8" ConfigName="Debug"/>
+      <Project Name="Challenge9" ConfigName="Debug"/>
+      <Project Name="Challenge10" ConfigName="Debug"/>
+      <Project Name="Challenge11" ConfigName="Debug"/>
+      <Project Name="MiscTests" ConfigName="Debug"/>
+      <Project Name="Challenge12" ConfigName="Debug"/>
+      <Project Name="Challenge13" ConfigName="Debug"/>
+      <Project Name="Challenge13B" ConfigName="Debug"/>
+      <Project Name="Challenge14A" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release">
+      <Environment/>
+      <Project Name="Challenge1" ConfigName="Release"/>
+      <Project Name="Challenge6" ConfigName="Release"/>
+      <Project Name="Challenge7" ConfigName="Release"/>
+      <Project Name="Challenge8" ConfigName="Release"/>
+      <Project Name="Challenge9" ConfigName="Release"/>
+      <Project Name="Challenge10" ConfigName="Release"/>
+      <Project Name="Challenge11" ConfigName="Release"/>
+      <Project Name="MiscTests" ConfigName="Release"/>
+      <Project Name="Challenge12" ConfigName="Release"/>
+      <Project Name="Challenge13" ConfigName="Release"/>
+      <Project Name="Challenge13B" ConfigName="Release"/>
+      <Project Name="Challenge14A" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

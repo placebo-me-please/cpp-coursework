@@ -4,6 +4,8 @@
 
 #include "Overloading.h"
 
+void display_memory_location(const Overloading *target_array);
+
 int main()
 {
 //    //building the arrays that will be operated on
@@ -18,7 +20,7 @@ int main()
     array_1->print_array();
     
     std::cout << "The memory address of the array according to the object pointer is:       " << array_1 << std::endl;
-    array_1->memory_check(); 
+    display_memory_location(array_1); 
     
     //NEXT STEP: Optimize the memory management and const-ness of Overloading class
     
@@ -31,4 +33,6 @@ int main()
     return 0;
 }
 
-
+void display_memory_location(const Overloading *target_array){
+    target_array->get_memory_address();
+}

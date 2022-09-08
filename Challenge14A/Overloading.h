@@ -21,8 +21,8 @@ public:
     
 //member method signatures
 //------------------------------------------------------------------------
-    void memory_check();
-    void print_array();
+    void get_memory_address() const ;
+    void print_array() const ;
 };
 
 #endif // _OVERLOADING_

@@ -6,8 +6,8 @@
 ProjectName            :=Challenge14A
 ConfigurationName      :=Debug
 WorkspaceConfiguration :=Debug
-WorkspacePath          :=/home/perry/Documents/programming/CPPCourseWorkspace
-ProjectPath            :=/home/perry/Documents/programming/CPPCourseWorkspace/Challenge14A
+WorkspacePath          :=/home/perry/Documents/programming/cpp-coursework
+ProjectPath            :=/home/perry/Documents/programming/cpp-coursework/Challenge14A
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -95,13 +95,13 @@ PreBuild:
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/perry/Documents/programming/CPPCourseWorkspace/Challenge14A/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/perry/Documents/programming/cpp-coursework/Challenge14A/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
 $(IntermediateDirectory)/Overloading.cpp$(ObjectSuffix): Overloading.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Overloading.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Overloading.cpp$(DependSuffix) -MM Overloading.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/perry/Documents/programming/CPPCourseWorkspace/Challenge14A/Overloading.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Overloading.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/perry/Documents/programming/cpp-coursework/Challenge14A/Overloading.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Overloading.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Overloading.cpp$(PreprocessSuffix): Overloading.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Overloading.cpp$(PreprocessSuffix) Overloading.cpp
 

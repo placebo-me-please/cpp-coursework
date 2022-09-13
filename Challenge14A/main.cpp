@@ -24,12 +24,24 @@ int main()
     std::cout << "The memory address of the array according to the object pointer is:               " << array_2 << std::endl;
     display_memory_location(array_2);
     
+    Overloading *const array_3 = new Overloading(array_1);
+    
+    std::cout << "Array 3 consists of these elements: ";
+    display_array_elements(array_3);
+    std::cout << "Array 3 is a deep copy of Array 1, so it has a unique memory address:             " << array_3 << std::endl;
+    
+//    //overloaded '=' operator that duplicates an array
+//    Overloading *copy_array = new Overloading;
+//    (*copy_array).operator=array_1;
+//    std::cout << "The memory address of the copied array according to the object pointer is:        " << copy_array << std::endl;
+    
     //overloaded '+' operator that concatenates two arrays to produce a third array
     
     //overloaded '-' operator that "pops" the last element of an array off
     
     delete array_1;
     delete array_2;
+//    delete copy_array;
     
     std::cout << "\n";
     

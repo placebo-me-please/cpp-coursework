@@ -9,6 +9,8 @@ void display_array_elements(const Overloading *target_array);
 
 int main()
 {
+//constructor testing
+//------------------------------------------------------------------------    
     Overloading *const array_1 = new Overloading(1, 2, 3);
     
     std::cout << "Array 1 consists of these elements: ";
@@ -30,10 +32,14 @@ int main()
     display_array_elements(array_3);
     std::cout << "Array 3 is a deep copy of Array 1, so it has a unique memory address:             " << array_3 << std::endl;
     
-//    //overloaded '=' operator that duplicates an array
-//    Overloading *copy_array = new Overloading;
-//    (*copy_array).operator=array_1;
-//    std::cout << "The memory address of the copied array according to the object pointer is:        " << copy_array << std::endl;
+//overload testing
+//------------------------------------------------------------------------
+    //overloaded '=' operator that duplicates an array
+    Overloading *const array_4 = new Overloading;
+    *array_4 = *array_2;
+    std::cout << "Array 4 consists of these elements: ";
+    display_array_elements(array_4);
+    std::cout << "Array 4 was created using an overloaded '=', so it has a unique memory address:   " << array_4 << std::endl;
     
     //overloaded '+' operator that concatenates two arrays to produce a third array
     
@@ -41,7 +47,8 @@ int main()
     
     delete array_1;
     delete array_2;
-//    delete copy_array;
+    delete array_3;
+    delete array_4;
     
     std::cout << "\n";
     

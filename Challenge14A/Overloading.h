@@ -26,7 +26,7 @@ public:
     void get_memory_address() const;
     void print_array() const;
     
-//    Overloading &operator=(const Overloading &rhs);
+    Overloading &operator=(Overloading *const rhs_array);
 };
 
 #endif // _OVERLOADING_

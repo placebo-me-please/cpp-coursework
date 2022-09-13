@@ -73,32 +73,22 @@ void Overloading::print_array() const{
 
 //member overloaders
 //------------------------------------------------------------------------
-//Overloading &Overloading::operator=(const Overloading &rhs){
-//    std::cout << "Overload called: object duplicated" << std::endl;
-//    
-////    //check if the LHS object is already equal to the RHS object
-////    if (this == &rhs){
-////        return *this;
-////    }
-//    
-//    //de-allocate the memory for the new object, then initialize it
-//    delete [] this->data_array;
-//    
-//    //REFACTOR NOTE: create a member method that measures the size of an array
-//    //then use that method to determine how large to make the new array
-//    
-//    //assign the RHS array values to the newly initialized LHS object
-//    bool sentinel {false};
-//    int i = 0;
-//    while (!sentinel){
-//        if (rhs.data_array[i] == -1){
-//            sentinel = true;
-//            this->data_array[i+1] = -1;
-//            return *this;
-//        }
-//        else {
-//            this->data_array[i] = rhs.data_array[i];
-//            i++;
-//        }
-//    }
-//}
+Overloading &Overloading::operator=(Overloading *const rhs_array){
+    
+    std::cout << "Overload called: object duplicated" << std::endl;
+
+    //assign the RHS array values to the newly initialized LHS object
+    bool sentinel {false};
+    int i = 0;
+    while (!sentinel){
+        if (rhs_array->data_array[i] == -1){
+            sentinel = true;
+            this->data_array[i+1] = -1;
+            return *this;
+        }
+        else {
+            this->data_array[i] = rhs_array->data_array[i];
+            i++;
+        }
+    }
+}

@@ -34,10 +34,5 @@ public:
     //method signatures
     bool deposit(double amount);
     bool withdraw(double amount);
-    
-
 };
-
-
-
 #endif // TRUST_ACCOUNT_H

@@ -36,16 +36,15 @@ int main() {
 //    withdraw(sav_accounts, 2000);
     
     // Checking Accounts
-    // TEST: attempt to modify the name of an account with the default name
-//    vector <Checking_Account> checking_accounts;
-//    checking_accounts.push_back(Checking_Account {});
-//    checking_accounts.push_back(Checking_Account {"Inky"});
-//    checking_accounts.push_back(Checking_Account {"Pinky", 1000});
-//    checking_accounts.push_back(Checking_Account {"Blinky", 1100, 1.50});
-//    
-//    display(checking_accounts);
-//    deposit(checking_accounts, 100);
-//    withdraw(checking_accounts, 1100);
+    vector <Checking_Account> checking_accounts;
+    checking_accounts.push_back(Checking_Account {});
+    checking_accounts.push_back(Checking_Account {"Inky"});
+    checking_accounts.push_back(Checking_Account {"Pinky", 1000});
+    checking_accounts.push_back(Checking_Account {"Blinky", 1100, 1.50});
+    
+    display(checking_accounts);
+    deposit(checking_accounts, 100);
+    withdraw(checking_accounts, 1100);
     
     // Trust Accounts
     vector <Trust_Account> trust_accounts;
@@ -54,7 +53,11 @@ int main() {
     display(trust_accounts);
     deposit(trust_accounts, 200);
     deposit(trust_accounts, 2000);
-//    withdraw(trust_accounts, 100);
+    withdraw(trust_accounts, 1801);
+    withdraw(trust_accounts, 100);
+    withdraw(trust_accounts, 100);
+    withdraw(trust_accounts, 100);
+    withdraw(trust_accounts, 100);
     
     return 0;
 }

@@ -92,3 +92,41 @@ Overloading &Overloading::operator=(Overloading *const rhs_array){
         }
     }
 }
+
+Overloading &Overloading::operator+(Overloading *const rhs_array){
+    
+    std::cout << "Overload called: arrays concatenated" <<std::endl;
+    
+    bool sentinel {false};
+    int i {0};
+    int size {0};
+    
+    //LHS measurement
+    while (!sentinel){
+        if (this->data_array[i] == -1) {
+            sentinel = true;
+            size++;
+        }
+        else {
+            size++;
+            i++;
+        }
+    }
+    
+    //RHS measurement
+    sentinel = false;
+    i = 0;
+    while (!sentinel){
+        if (rhs_array->data_array[i] == -1) {
+            sentinel = true;
+            size++;
+        }
+        else {
+            size++;
+            i++;
+        }
+    }
+    
+    Overloading *const concat_array = new Overloading;
+    
+}

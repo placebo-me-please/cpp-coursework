@@ -21,12 +21,15 @@ public:
     Overloading(Overloading *const source_array);
     ~Overloading(); 
     
-//member method and overloading signatures
+//member method signatures
 //------------------------------------------------------------------------
     void get_memory_address() const;
     void print_array() const;
     
+//overloading signatures
+//------------------------------------------------------------------------    
     Overloading &operator=(Overloading *const rhs_array);
+    Overloading &operator+(Overloading *const rhs_array);
 };
 
 #endif // _OVERLOADING_

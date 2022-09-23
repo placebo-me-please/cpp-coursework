@@ -18,4 +18,18 @@
 /home/perry/Documents/programming/cpp-coursework/Challenge13/Movies.cpp
 /home/perry/Documents/programming/cpp-coursework/MiscTests/main.cpp
 /home/perry/Documents/programming/cpp-coursework/Challenge6/main.cpp
+<<<<<<< HEAD
+=======
+/home/perry/Documents/programming/cpp-coursework/Challenge15/Account.cpp
+/home/perry/Documents/programming/cpp-coursework/Challenge15/Account.h
+/home/perry/Documents/programming/cpp-coursework/Challenge15/Account_Util.cpp
+/home/perry/Documents/programming/cpp-coursework/Challenge15/Account_Util.h
+/home/perry/Documents/programming/cpp-coursework/Challenge15/Savings_Account.cpp
+/home/perry/Documents/programming/cpp-coursework/Challenge15/Checking_Account.h
+/home/perry/Documents/programming/cpp-coursework/Challenge15/Savings_Account.h
+/home/perry/Documents/programming/cpp-coursework/Challenge15/Checking_Account.cpp
+/home/perry/Documents/programming/cpp-coursework/Challenge15/main.cpp
+/home/perry/Documents/programming/cpp-coursework/Challenge15/Trust_Account.h
+/home/perry/Documents/programming/cpp-coursework/Challenge15/Trust_Account.cpp
+>>>>>>> developement
 /home/perry/Documents/programming/cpp-coursework/Challenge1/main.cpp

@@ -37,13 +37,10 @@ int main()
     //overloaded '=' operator that duplicates an array
     Overloading *const array_4 = new Overloading;
     *array_4 = *array_2;
+    
     std::cout << "Array 4 consists of these elements: ";
     display_array_elements(array_4);
     std::cout << "Array 4 was created using an overloaded '=', so it has a unique memory address:   " << array_4 << std::endl;
-    
-    //overloaded '+' operator that concatenates two arrays to produce a third array
-    
-    //overloaded '-' operator that "pops" the last element of an array off
     
     delete array_1;
     delete array_2;

@@ -53,7 +53,8 @@ int main() {
     
     display(trust_accounts);
     deposit(trust_accounts, 200);
-    withdraw(trust_accounts, 100);
+    deposit(trust_accounts, 2000);
+//    withdraw(trust_accounts, 100);
     
     return 0;
 }

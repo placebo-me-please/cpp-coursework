@@ -107,12 +107,12 @@ void deposit(std::vector<Trust_Account> &accounts, double amount) {
     }
 }
 
-void withdraw(std::vector<Trust_Account> &accounts, double amount) {
-    std::cout << "\n=== Withdrawing from Savings Accounts ======================" << std::endl;
-    for (auto &acc:accounts)  {
-        if (acc.withdraw(amount)) 
-            std::cout << "Withdrew " << amount << " from " << acc << std::endl;
-        else
-            std::cout << "Failed Withdrawal of " << amount << " from " << acc << std::endl;
-    } 
-}
+//void withdraw(std::vector<Trust_Account> &accounts, double amount) {
+//    std::cout << "\n=== Withdrawing from Savings Accounts ======================" << std::endl;
+//    for (auto &acc:accounts)  {
+//        if (acc.withdraw(amount)) 
+//            std::cout << "Withdrew " << amount << " from " << acc << std::endl;
+//        else
+//            std::cout << "Failed Withdrawal of " << amount << " from " << acc << std::endl;
+//    } 
+//}

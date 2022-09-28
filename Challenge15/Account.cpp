@@ -4,7 +4,7 @@ Account::Account(std::string name, double balance)
     : name{name}, balance{balance} {
 }
 
-bool Account::deposit(double amount) {
+/*virtual*/ bool Account::deposit(double amount) {
     if (amount < 0) 
         return false;
     else {
@@ -13,7 +13,7 @@ bool Account::deposit(double amount) {
     }
 }
 
-bool Account::withdraw(double amount) {
+/*virtual*/ bool Account::withdraw(double amount) {
     if (balance-amount >=0) {
         balance-=amount;
         return true;
@@ -21,11 +21,11 @@ bool Account::withdraw(double amount) {
         return false;
 }
 
-double Account::get_balance() const {
-    return balance;
-}
-
 std::ostream &operator<<(std::ostream &os, const Account &account) {
     os << "[Account: " << account.name << ": " << account.balance << "]";
     return os;
+}
+
+Account::~Account() {
+    std::cout << "Virtual Account Destructor Called" << std::endl;
 }

@@ -12,24 +12,6 @@ using namespace std;
 int main() {
     cout.precision(2);
     cout << fixed;
-   
-    //Basic Accounts
-    //-----------------------------------------------------------------
-    Account * a1 = new Account{};
-    Account * a2 = new Account {"Larry"};
-    Account * a3 = new Account {"Barry", 2000};
-    
-    vector <Account *> accounts;
-    accounts.push_back(a1);
-    accounts.push_back(a2);
-    accounts.push_back(a3);
-    
-    deposit(accounts, 1000.00);
-    withdraw(accounts,2000);
-    display(accounts);
-    
-    for (auto acct_ptr : accounts)
-        delete acct_ptr;
     
     //Savings Accounts
     //-----------------------------------------------------------------

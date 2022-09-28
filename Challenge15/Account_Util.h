@@ -13,8 +13,6 @@ void withdraw(std::vector<Account *> &accounts, double amount);
 
 // Utility helper functions for Savings Account class
 void display(const std::vector<Savings_Account *> &accounts);
-void deposit(std::vector<Savings_Account *> &accounts, double amount);
-void withdraw(std::vector<Savings_Account *> &accounts, double amount);
 
 // Utility helper functions for Checking Account class
 void display(const std::vector<Checking_Account> &accounts);

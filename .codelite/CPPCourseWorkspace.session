@@ -5,15 +5,8 @@
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/main.cpp" Name="FileName"/>
-      <int Value="41" Name="FirstVisibleLine"/>
-      <int Value="54" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Account.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="4" Name="CurrentLine"/>
+      <int Value="3" Name="FirstVisibleLine"/>
+      <int Value="27" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -25,58 +18,65 @@
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Savings_Account.h" Name="FileName"/>
-      <int Value="3" Name="FirstVisibleLine"/>
-      <int Value="20" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Savings_Account.cpp" Name="FileName"/>
+      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Account.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
       <int Value="14" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Account_Util.h" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="6" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Account_Util.cpp" Name="FileName"/>
-      <int Value="63" Name="FirstVisibleLine"/>
-      <int Value="1" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Checking_Account.h" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="9" Name="CurrentLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Checking_Account.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="17" Name="CurrentLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Trust_Account.h" Name="FileName"/>
-      <int Value="13" Name="FirstVisibleLine"/>
-      <int Value="35" Name="CurrentLine"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Trust_Account.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="10" Name="CurrentLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Savings_Account.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Savings_Account.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Account_Util.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="11" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Account_Util.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="9" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

@@ -13,7 +13,8 @@ int main() {
     cout.precision(2);
     cout << fixed;
    
-    // Accounts
+    //Basic Accounts
+    //-----------------------------------------------------------------
     Account * a1 = new Account{};
     Account * a2 = new Account {"Larry"};
     Account * a3 = new Account {"Barry", 2000};
@@ -27,18 +28,32 @@ int main() {
     withdraw(accounts,2000);
     display(accounts);
     
-//    // Savings Accounts
-//    vector<Savings_Account> sav_accounts;
-//    sav_accounts.push_back(Savings_Account {} );
-//    sav_accounts.push_back(Savings_Account {"Superman"} );
-//    sav_accounts.push_back(Savings_Account {"Batman", 2000} );
-//    sav_accounts.push_back(Savings_Account {"Wonderwoman", 5000, 5.0} );
-//
-//    display(sav_accounts);
-//    deposit(sav_accounts, 1000);
-//    withdraw(sav_accounts, 2000);
+    for (auto acct_ptr : accounts)
+        delete acct_ptr;
+    
+    //Savings Accounts
+    //-----------------------------------------------------------------
+    vector <Savings_Account *> sav_accounts;
+    Account * sa1 = new Savings_Account {};
+    Account * sa2 = new Savings_Account {"Superman"};
+    Account * sa3 = new Savings_Account {"Batman", 2000};
+    Account * sa4 = new Savings_Account {"Wonderwoman", 5000, 5.0};
+    
+    vector <Account *> checking_accounts;
+    checking_accounts.push_back(sa1);
+    checking_accounts.push_back(sa2);
+    checking_accounts.push_back(sa3);
+    checking_accounts.push_back(sa4);
+    
+    deposit(checking_accounts, 1000.00);
+    withdraw(checking_accounts,2000);
+    display(checking_accounts);
+    
+    for (auto acct_ptr : checking_accounts)
+        delete acct_ptr;
     
 //    // Checking Accounts
+//    //-----------------------------------------------------------------
 //    vector <Checking_Account> checking_accounts;
 //    checking_accounts.push_back(Checking_Account {});
 //    checking_accounts.push_back(Checking_Account {"Inky"});

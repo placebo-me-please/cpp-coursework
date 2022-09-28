@@ -28,7 +28,7 @@ int main() {
     checking_accounts.push_back(sa4);
     
     deposit(checking_accounts, 1000.00);
-    withdraw(checking_accounts,2000);
+    withdraw(checking_accounts,2000.00);
     display(checking_accounts);
     
     for (auto acct_ptr : checking_accounts)

@@ -21,11 +21,6 @@ Account::Account(std::string name, double balance)
         return false;
 }
 
-std::ostream &operator<<(std::ostream &os, const Account &account) {
-    os << "[Account: " << account.name << ": " << account.balance << "]";
-    return os;
-}
+Account::~Account() {};
 
-Account::~Account() {
-    std::cout << "Virtual Account Destructor Called" << std::endl;
-}
+/*virtual*/ void Account::display() const {};

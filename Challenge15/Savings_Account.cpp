@@ -15,8 +15,7 @@ Savings_Account::Savings_Account(std::string name, double balance, double int_ra
     return Account::withdraw(amount);
 }
 
-std::ostream &operator<<(std::ostream &os, const Savings_Account &account) {
-    os << "[Savings_Account: " << account.name << ": " << account.balance << ", " << account.int_rate << "%]";
-    return os;
+/*virtual*/ void Savings_Account::display() const {
+    std::cout << "[Checking Account of " << name << ": $" << balance << ", Interest Rate: " << int_rate << "%]";
 }
 

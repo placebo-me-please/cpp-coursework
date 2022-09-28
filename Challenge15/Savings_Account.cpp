@@ -16,6 +16,6 @@ Savings_Account::Savings_Account(std::string name, double balance, double int_ra
 }
 
 /*virtual*/ void Savings_Account::display() const {
-    std::cout << "[Checking Account of " << name << ": $" << balance << ", Interest Rate: " << int_rate << "%]";
+    std::cout << "[Savings Account of " << name << ": $" << balance << ", Interest Rate: " << int_rate << "%]";
 }
 

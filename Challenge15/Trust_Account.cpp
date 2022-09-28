@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "Account.h"
 #include "Trust_Account.h"
 
@@ -6,59 +5,30 @@
 #include <iostream>
 
 Trust_Account::Trust_Account(std::string name, double balance, double int_rate)
-    : Savings_Account {name, balance, int_rate}, int_rate {int_rate}, withdraw_count {0} {
+    : Savings_Account {name, balance, int_rate}, withdraw_count {0} {
     std::cout << "Trust Account Constructor Called" << std::endl;
 }
 
-bool Trust_Account::deposit(double amount){
+/*virtual*/ bool Trust_Account::deposit(double amount){
     if (amount >= bonus_threshold){
         amount += bonus_amount;
     }
     return Savings_Account::deposit(amount);
 }
 
-bool Trust_Account::withdraw(double amount){
+/*virtual*/ bool Trust_Account::withdraw(double amount){
     if (amount <= balance * withdraw_threshold && withdraw_count < 3){
         withdraw_count += 1;
         return Account::withdraw(amount);
     }
+    if (amount >= balance * withdraw_threshold)
+        std::cout << "Withdraw request exceeds the limit - you may only withdraw up to " << withdraw_threshold*100 << "% of your balance" << std::endl;
     
     if (withdraw_count == 3)
-        std::cout << "Warning: Withdraw limit of Trust Account Reached!" << std::endl;
-    
-    if (amount > balance * withdraw_threshold)
-        std::cout << "Warning: Cannot withdraw more than " << 100 * int_rate << "% of your account balance" << std::endl;
-    
+        std::cout << "Number of withdraws exceeded - you may not withdraw more than three times per year" << std::endl;
     return false;
 }
 
-std::ostream &operator<<(std::ostream &os, const Trust_Account &account) {
-    os << "[Trust Account: " << account.name << ": $" << account.balance << ", " << 100 * account.int_rate << "%, transaction count: " << account.withdraw_count <<"]";
-    return os;
+/*virtual*/ void Trust_Account::display() const {
+    std::cout << "[Trust Account of " << name << ": $" << balance << ", Interest Rate: " << int_rate << "%, Withdraw Count: " << withdraw_count << "]";
 }
-=======
-//#include "Account.h"
-//#include "Trust_Account.h"
-//
-//#include <string>
-//#include <iostream>
-//
-//Trust_Account::Trust_Account(std::string name, double balance, double int_rate)
-//    : Savings_Account {name, balance}, int_rate {int_rate}, withdraw_count {0} {
-//    std::cout << "Trust Account Constructor Called" << std::endl;
-//}
-//
-//bool Trust_Account::deposit(double amount){
-//    if (amount >= bonus_threshold){
-//        amount += bonus_amount;
-//    }
-//    return Savings_Account::deposit(amount);
-//}
-//
-//bool Trust_Account::withdraw(double amount){
-//    if (amount <= balance * withdraw_threshold){
-//        return Account::withdraw(amount);
-//    }
-//    return false;
-//}
->>>>>>> developement

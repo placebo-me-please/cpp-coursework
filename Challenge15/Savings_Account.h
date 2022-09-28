@@ -13,7 +13,7 @@ public:
     Savings_Account(std::string name = def_name, double balance = def_balance, double int_rate = def_int_rate);    
     virtual bool deposit(double amount) override;
     virtual bool withdraw(double amount) override;
-    virtual void display() const;
+    virtual void display() const override;
 };
 
 #endif // _SAVINGS_ACCOUNT_H_

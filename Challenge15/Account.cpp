@@ -2,6 +2,7 @@
 
 Account::Account(std::string name, double balance) 
     : name{name}, balance{balance} {
+        std::cout << "Base Class Constructor Called" << std::endl;
 }
 
 /*virtual*/ bool Account::deposit(double amount) {

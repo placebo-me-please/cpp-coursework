@@ -23,7 +23,7 @@ public:
     Checking_Account(std::string name = def_name, double balance = def_balance, double withdraw_cost = def_withdraw_cost);
     virtual bool deposit(double amount) override;
     virtual bool withdraw(double amount) override;
-    virtual void display() const;
+    virtual void display() const override;
 };
 
 #endif // CHECKING_ACCOUNT_H

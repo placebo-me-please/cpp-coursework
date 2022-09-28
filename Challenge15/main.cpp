@@ -76,17 +76,3 @@ int main() {
     return 0;
 }
 
-//2. Create an I_Printable class interface as we did in the course and provide functionality so
-//    all accounts are printable to an ostream using the overloaded insertion operator.
-//    
-//        class I_Printable
-//        {
-//            friend std::ostream &operator<<(std::ostream &os, const I_Printable &obj);
-//        public:
-//            virtual void print(std::ostream &os) const = 0;
-//            virtual ~I_Printable() = default;
-//        };
-//        
-//4. Test your code with base class pointers as well as local objects.
-//    I provided a simple main driver that will get you started
-

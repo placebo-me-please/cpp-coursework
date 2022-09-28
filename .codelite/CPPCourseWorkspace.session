@@ -5,22 +5,35 @@
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/main.cpp" Name="FileName"/>
+<<<<<<< HEAD
       <int Value="23" Name="FirstVisibleLine"/>
       <int Value="37" Name="CurrentLine"/>
+=======
+      <int Value="3" Name="FirstVisibleLine"/>
+      <int Value="27" Name="CurrentLine"/>
+>>>>>>> developement
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Account.h" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
+<<<<<<< HEAD
       <int Value="15" Name="CurrentLine"/>
+=======
+      <int Value="1" Name="CurrentLine"/>
+>>>>>>> developement
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Account.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
+<<<<<<< HEAD
       <int Value="0" Name="CurrentLine"/>
+=======
+      <int Value="14" Name="CurrentLine"/>
+>>>>>>> developement
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -34,49 +47,79 @@
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Checking_Account.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
+<<<<<<< HEAD
       <int Value="7" Name="CurrentLine"/>
+=======
+      <int Value="0" Name="CurrentLine"/>
+>>>>>>> developement
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Trust_Account.h" Name="FileName"/>
+<<<<<<< HEAD
       <int Value="9" Name="FirstVisibleLine"/>
       <int Value="35" Name="CurrentLine"/>
+=======
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+>>>>>>> developement
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Trust_Account.cpp" Name="FileName"/>
+<<<<<<< HEAD
       <int Value="12" Name="FirstVisibleLine"/>
       <int Value="34" Name="CurrentLine"/>
+=======
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+>>>>>>> developement
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Savings_Account.h" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
+<<<<<<< HEAD
       <int Value="10" Name="CurrentLine"/>
+=======
+      <int Value="0" Name="CurrentLine"/>
+>>>>>>> developement
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Savings_Account.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
+<<<<<<< HEAD
       <int Value="15" Name="CurrentLine"/>
+=======
+      <int Value="0" Name="CurrentLine"/>
+>>>>>>> developement
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Account_Util.h" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
+<<<<<<< HEAD
       <int Value="0" Name="CurrentLine"/>
+=======
+      <int Value="11" Name="CurrentLine"/>
+>>>>>>> developement
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge15/Account_Util.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
+<<<<<<< HEAD
       <int Value="66" Name="CurrentLine"/>
+=======
+      <int Value="9" Name="CurrentLine"/>
+>>>>>>> developement
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

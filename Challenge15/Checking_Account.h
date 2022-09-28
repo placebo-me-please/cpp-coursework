@@ -7,9 +7,6 @@
 #include <iostream>
 
 class Checking_Account : public Account {
-    //operator overloader is semi-specific to this derived class
-    friend std::ostream &operator<<(std::ostream &os, const Checking_Account &account);
-   
 private:
     //default values for no-arg constructors
     static constexpr const char *def_name = "Unnamed Checking Account";
@@ -24,11 +21,9 @@ public:
     //default constructor signature
     //first two attributes passed to BASE class constructor; final attribute passed to DERIVED class constructor
     Checking_Account(std::string name = def_name, double balance = def_balance, double withdraw_cost = def_withdraw_cost);
-    
-    //withdraw method signature
-    bool withdraw(double amount);
-    
-    //deposit method signature not required - this class will inherit deposit method from BASE class
+    virtual bool deposit(double amount) override;
+    virtual bool withdraw(double amount) override;
+    virtual void display() const;
 };
 
 #endif // CHECKING_ACCOUNT_H

@@ -12,30 +12,29 @@ using namespace std;
 int main() {
     cout.precision(2);
     cout << fixed;
-   
-//    // Accounts
-//    vector<Account> accounts;
-//    accounts.push_back(Account {});
-//    accounts.push_back(Account {"Larry"});
-//    accounts.push_back(Account {"Moe", 2000} );
-//    accounts.push_back(Account {"Curly", 5000} );
-//    
-//    display(accounts);
-//    deposit(accounts, 1000);
-//    withdraw(accounts,2000);
-//    
-    // Savings Accounts
-//    vector<Savings_Account> sav_accounts;
-//    sav_accounts.push_back(Savings_Account {} );
-//    sav_accounts.push_back(Savings_Account {"Superman"} );
-//    sav_accounts.push_back(Savings_Account {"Batman", 2000} );
-//    sav_accounts.push_back(Savings_Account {"Wonderwoman", 5000, 5.0} );
-//
-//    display(sav_accounts);
-//    deposit(sav_accounts, 1000);
-//    withdraw(sav_accounts, 2000);
+    
+    //Savings Accounts
+    //-----------------------------------------------------------------
+    Account * sa1 = new Savings_Account {};
+    Account * sa2 = new Savings_Account {"Superman"};
+    Account * sa3 = new Savings_Account {"Batman", 2000};
+    Account * sa4 = new Savings_Account {"Wonderwoman", 5000, 5.0};
+    
+    vector <Account *> savings_accounts;
+    savings_accounts.push_back(sa1);
+    savings_accounts.push_back(sa2);
+    savings_accounts.push_back(sa3);
+    savings_accounts.push_back(sa4);
+    
+    deposit(savings_accounts, 1000.00);
+    withdraw(savings_accounts,2000.00);
+    display(savings_accounts);
+    
+    for (auto acct_ptr : savings_accounts)
+        delete acct_ptr;
     
     // Checking Accounts
+<<<<<<< HEAD
     vector <Checking_Account> checking_accounts;
     checking_accounts.push_back(Checking_Account {});
     checking_accounts.push_back(Checking_Account {"Inky"});
@@ -45,11 +44,25 @@ int main() {
     display(checking_accounts);
     deposit(checking_accounts, 100);
     withdraw(checking_accounts, 1100);
+=======
+    //-----------------------------------------------------------------
+    Account * ca1 = new Checking_Account {};
+    Account * ca2 = new Checking_Account {"Inky"};
+    Account * ca3 = new Checking_Account {"Pinky", 1000};
+    Account * ca4 = new Checking_Account {"Winky", 2000, 1.00};
+>>>>>>> developement
     
-    // Trust Accounts
-    vector <Trust_Account> trust_accounts;
-    trust_accounts.push_back(Trust_Account {});
+    vector <Account *> checking_accounts;
+    checking_accounts.push_back(ca1);
+    checking_accounts.push_back(ca2);
+    checking_accounts.push_back(ca3);
+    checking_accounts.push_back(ca4);
+
+    deposit(checking_accounts, 100);
+    withdraw(checking_accounts, 1100);
+    display(checking_accounts);
     
+<<<<<<< HEAD
     display(trust_accounts);
     deposit(trust_accounts, 200);
     deposit(trust_accounts, 2000);
@@ -60,6 +73,25 @@ int main() {
     withdraw(trust_accounts, 100);
     
     return 0;
+=======
+    for (auto acct_ptr : checking_accounts)
+        delete acct_ptr;
+ 
+//    // Trust Accounts
+//    vector <Trust_Account> trust_accounts;
+//    trust_accounts.push_back(Trust_Account {});
+//    
+//    display(trust_accounts);
+//    deposit(trust_accounts, 200);
+//    deposit(trust_accounts, 2000);
+//    withdraw(trust_accounts, 1801);
+//    withdraw(trust_accounts, 100);
+//    withdraw(trust_accounts, 100);
+//    withdraw(trust_accounts, 100);
+//    withdraw(trust_accounts, 100);
+//    
+//    return 0;
+>>>>>>> developement
 }
 
 //You are provided with a completed Account class hierarchy that was completed in Section 1.

@@ -7,45 +7,34 @@
 #include "Trust_Account.h"
 #include "Account_Util.h"
 
-using namespace std;
-
-//Exception Classes
-//-----------------------------------------------------------------
-class NegativeBalanceException : public std::exception {
-public:
-    NegativeBalanceException() noexcept = default;
-    ~NegativeBalanceException() = default;
-    virtual const char * what() const noexcept{
-        return "Account with a negative balance cannot be created - please enter a value greater than or equal to zero";
-    }
-};
-
-class OverdraftException : public std::exception {
-public:
-    OverdraftException() noexcept = default;
-    ~OverdraftException() = default;
-    virtual const char * what() const noexcept{
-        return "Cannot withdraw more money than is account - please enter a value less than or equal to account balance";
-    }
-};
-
 int main() {
-    cout.precision(2);
-    cout << fixed;
+    std::cout.precision(2);
+    std::cout << std::fixed;
     
 //Application Testing
 //-----------------------------------------------------------------
 
     //Exception Testing
     //-----------------------------------------------------------------
-    //try block tests are 1.) negative balance initiation, and 2.) overdraft
+    
     //negative balance initialization
+    //-------------------------------
     try {
-        Account * negative_savings = new Savings_Account {"Scooby", -1, 1.0};
+        Account * negative_account_bal = new Savings_Account {"Scooby", -1, 1.0};
+    }
+    catch (const NegativeBalanceException &ex) {
+        std::cerr << ex.what() << std::endl;
     }
     
-    //catch blocks
-    catch (const NegativeBalanceException &ex) {
+    //overdraft
+    //-------------------------------
+    Account * overdraft_account_bal = new Savings_Account {"Shaggy", 1000, 1.0};
+    std::vector <Account *> overdraft_vector;
+    overdraft_vector.push_back(overdraft_account_bal);
+    try {
+        withdraw(overdraft_vector, 1001.00);
+    }
+    catch (const OverdraftException &ex) {
         std::cerr << ex.what() << std::endl;
     }
     
@@ -56,7 +45,7 @@ int main() {
 //    Account * sa3 = new Savings_Account {"Batman", 2000};
 //    Account * sa4 = new Savings_Account {"Wonderwoman", 5000, 5.0};
 //    
-//    vector <Account *> savings_accounts;
+//    std::vector <Account *> savings_accounts;
 //    savings_accounts.push_back(sa1);
 //    savings_accounts.push_back(sa2);
 //    savings_accounts.push_back(sa3);
@@ -76,7 +65,7 @@ int main() {
 //    Account * ca3 = new Checking_Account {"Pinky", 1000};
 //    Account * ca4 = new Checking_Account {"Winky", 2000, 1.00};
 //    
-//    vector <Account *> checking_accounts;
+//    std::vector <Account *> checking_accounts;
 //    checking_accounts.push_back(ca1);
 //    checking_accounts.push_back(ca2);
 //    checking_accounts.push_back(ca3);
@@ -96,7 +85,7 @@ int main() {
 //    Account * ta3 = new Trust_Account {"Sleepy", 2000};
 //    Account * ta4 = new Trust_Account {"Mopey", 4000, 5};
 //    
-//    vector <Account *> trust_accounts;
+//    std::vector <Account *> trust_accounts;
 //    trust_accounts.push_back(ta1);
 //    trust_accounts.push_back(ta2);
 //    trust_accounts.push_back(ta3);

@@ -1,9 +1,8 @@
 #include <iostream>
 #include "Account_Util.h"
 
-// Helper functions for Account and its derived classes
-// -----------------------------------------------------------------------------------------------
-
+//Helper functions for Account and its derived classes
+//----------------------------------------------------------------
 // Deposits supplied amount to each Account object in the vector
 void deposit(std::vector<Account *> &accounts, double amount) {
     std::cout << "\n=== Depositing to Accounts =================================" << std::endl;
@@ -33,6 +32,8 @@ void display(std::vector<Account *> &accounts) {
         std::cout << *acc << std::endl;
 }
 
+//Overloaded operator
+//----------------------------------------------------------------
 std::ostream &operator<<(std::ostream &os, const Account &account) {
     account.display();
     return os;

@@ -2,7 +2,6 @@
 
 Savings_Account::Savings_Account(std::string name, double balance, double int_rate)
     : Account {name, balance}, int_rate{int_rate} {
-    std::cout << "Savings Account Constructor Called" << std::endl;
 }
 
 /*virtual*/ bool Savings_Account::deposit(double amount) /*override*/ {

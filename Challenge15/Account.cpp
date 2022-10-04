@@ -1,8 +1,10 @@
 #include "Account.h"
+#include "Account_Util.h"
 
 Account::Account(std::string name, double balance) 
     : name{name}, balance{balance} {
-        std::cout << "Base Class Constructor Called" << std::endl;
+        if (balance < 0)
+            throw NegativeBalanceException();
 }
 
 /*virtual*/ bool Account::deposit(double amount) {
@@ -18,8 +20,9 @@ Account::Account(std::string name, double balance)
     if (balance-amount >=0) {
         balance-=amount;
         return true;
-    } else
-        return false;
+    }
+    else
+        throw OverdraftException();
 }
 
 Account::~Account() {};

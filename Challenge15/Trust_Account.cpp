@@ -6,7 +6,6 @@
 
 Trust_Account::Trust_Account(std::string name, double balance, double int_rate)
     : Savings_Account {name, balance, int_rate}, withdraw_count {0} {
-    std::cout << "Trust Account Constructor Called" << std::endl;
 }
 
 /*virtual*/ bool Trust_Account::deposit(double amount){

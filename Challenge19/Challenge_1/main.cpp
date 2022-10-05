@@ -23,6 +23,13 @@ struct Tours {
     std::vector<Country> countries;
 };
 
+void print_headers();
+void print_rows(Tours &tour_data);
+
+const int fw_1 {10};
+const int fw_2 {15};
+const int fw_3 {20};
+
 int main()
 {
     Tours tours
@@ -56,18 +63,49 @@ int main()
         }
     };
 
-    // Unformatted display so you can see how to access the vector elements
-    std::cout << tours.title << std::endl;
-    for(auto country : tours.countries) {   // loop through the countries
-        std::cout << country.name << std::endl;
-        for(auto city : country.cities) {       // loop through the cities for each country
-            std::cout << "\t" << city.name 
-                          << "\t" << city.population 
-                          << "\t" << city.cost 
-                          << std::endl;
+    print_headers();
+    print_rows(tours);
+
+    return 0;
+}
+
+void print_headers(){
+    std::cout 
+    << std::setw(fw_2) << std::left << "COUNTRY"
+    << std::setw(fw_3) << std::left << "CITY"
+    << std::setw(fw_2) << std::right << "POPULATION"
+    << std::setw(fw_1) << std::right << "COST ($)"
+    << std::endl;
+    
+    std::cout << "------------------------------------------------------------" << std::endl;
+}
+
+void print_rows(Tours &tour_data){
+    
+    bool first_row {true};
+    for (auto country : tour_data.countries){
+        
+        std::cout << std::setw(15) << std::left << country.name;
+        
+        //NOTE: there is a clever way to use a conditional operator here
+        //would need to refactor this as a control flow with an index value
+        first_row = true;
+        for (auto city : country.cities){
+            if (first_row){
+                first_row = false;
+                std::cout 
+                << std::setw(fw_3) << std::left << city.name
+                << std::setw(fw_2) << std::right << std::setprecision(10) << city.population
+                << std::setw(fw_1) << std::right << std::setprecision(2) << std::fixed << city.cost
+                << std::endl;
+            }
+            else if (!first_row){
+                std::cout 
+                << std::setw(fw_2) << "" << std::setw(fw_3) << std::left << city.name
+                << std::setw(fw_2) << std::right << std::setprecision(10) << city.population
+                << std::setw(fw_1) << std::right << std::setprecision(2) << std::fixed << city.cost
+                << std::endl;
+            }
         }
     }
-
-    std::cout << std::endl << std::endl;
-    return 0;
 }

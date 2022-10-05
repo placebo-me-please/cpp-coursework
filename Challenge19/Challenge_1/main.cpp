@@ -1,6 +1,3 @@
-// Section 19
-// Challenge 1
-// Formatting output
 #include <iostream>
 #include <iomanip>
 #include <vector>

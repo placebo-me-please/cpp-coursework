@@ -1,0 +1,4 @@
+-I/home/perry/Documents/programming/cpp-coursework/Challenge19/Challenge_1
+-std=c++14
+-target
+x86_64-linux-gnu

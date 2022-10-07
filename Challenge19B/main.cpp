@@ -17,10 +17,9 @@ void score_printer (std::vector <Student> &response_vector);
 
 int main(){
     
-    //initialization
-    std::ifstream in_file {"test_responses.txt"};
-    
     //verify that the file has been opened
+    std::ifstream in_file;
+    in_file.open("test_responses.txt");
     if (!in_file){
         std::cerr << "The file did not open correctly - please try again" << std::endl;
         return 1;
@@ -78,11 +77,13 @@ void response_scorer (std::vector <Student> &response_vector) {
     
     for (auto student : response_vector) {
         
+        //this skips the score response template (i.e. first row)
         if (i == 0) {
             i++;
             continue;
         }
         
+        //this examines each sutdent's response letter by letter (i.e. substring)
         else if (i != 0) {
             
             j = 0;

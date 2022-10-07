@@ -93,6 +93,7 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="validation-text.txt"/>
     <File Name="romeo-and-juliet.txt"/>
     <File Name="main.cpp"/>
   </VirtualDirectory>

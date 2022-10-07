@@ -16,7 +16,7 @@ int main() {
     
     //open the file and verify it did so correctly
     std::ifstream in_file;
-    in_file.open("validation-text.txt");
+    in_file.open("romeo-and-juliet.txt");
     if (!in_file){
         std::cerr << "The file did not open correctly - please try again" << std::endl;
         return 1;
@@ -45,7 +45,8 @@ void print_match_count(std::ifstream &read_file, std::string &search_word) {
     while (read_file >> file_word) {
         
         //call the text_match() method - if the return value is true increment match_count
-        if (file_word == search_word)
+        std::size_t match_found = file_word.find(search_word);
+        if (match_found != std::string::npos)
             match_count += 1;
         
         search_count += 1;
@@ -54,9 +55,4 @@ void print_match_count(std::ifstream &read_file, std::string &search_word) {
     //display the search result to the user
     std::cout << search_count << " words were searched in the file" << std::endl;
     std::cout << "Your search word has " << match_count << " hits" << std::endl;
-}
-
-bool text_match(std::string &search_word, std::string &file_word) {
-    
-    return false;
 }

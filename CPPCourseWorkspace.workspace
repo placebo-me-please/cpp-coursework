@@ -13,7 +13,10 @@
   <Project Name="Challenge14A" Path="Challenge14A/Challenge14A.project" Active="No"/>
   <Project Name="Challenge15" Path="Challenge15/Challenge15.project" Active="No"/>
   <Project Name="Challenge15" Path="Challenge15/Challenge15.project" Active="No"/>
-  <Project Name="Challenge17" Path="Challenge17/Challenge17.project" Active="Yes"/>
+  <Project Name="Challenge19A" Path="Challenge19/Challenge_1/Challenge_1.project" Active="No"/>
+  <Project Name="Challenge19B" Path="Challenge19B/Challenge19B.project" Active="No"/>
+  <Project Name="Challenge19C" Path="Challenge19C/Challenge19C.project" Active="No"/>
+  <Project Name="Challenge19D" Path="Challenge19D/Challenge19D.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
@@ -31,7 +34,10 @@
       <Project Name="Challenge14A" ConfigName="Debug"/>
       <Project Name="Challenge15" ConfigName="Debug"/>
       <Project Name="Challenge15" ConfigName="Debug"/>
-      <Project Name="Challenge17" ConfigName="Debug"/>
+      <Project Name="Challenge19A" ConfigName="Debug"/>
+      <Project Name="Challenge19B" ConfigName="Debug"/>
+      <Project Name="Challenge19C" ConfigName="Debug"/>
+      <Project Name="Challenge19D" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
@@ -49,7 +55,10 @@
       <Project Name="Challenge14A" ConfigName="Release"/>
       <Project Name="Challenge15" ConfigName="Release"/>
       <Project Name="Challenge15" ConfigName="Release"/>
-      <Project Name="Challenge17" ConfigName="Release"/>
+      <Project Name="Challenge19A" ConfigName="Release"/>
+      <Project Name="Challenge19B" ConfigName="Release"/>
+      <Project Name="Challenge19C" ConfigName="Release"/>
+      <Project Name="Challenge19D" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

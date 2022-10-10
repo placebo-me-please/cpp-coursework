@@ -4,9 +4,29 @@
   <wxString Value="/home/perry/Documents/programming/cpp-coursework/CPPCourseWorkspace.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
+<<<<<<< HEAD
       <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge17/main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
       <int Value="0" Name="CurrentLine"/>
+=======
+      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge19C/main.cpp" Name="FileName"/>
+      <int Value="30" Name="FirstVisibleLine"/>
+      <int Value="48" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge19C/romeo-and-juliet.txt" Name="FileName"/>
+      <int Value="165" Name="FirstVisibleLine"/>
+      <int Value="165" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge19C/validation-text.txt" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="6" Name="CurrentLine"/>
+>>>>>>> developement
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

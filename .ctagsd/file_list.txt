@@ -1,6 +1,8 @@
-/home/perry/Documents/programming/cpp-coursework/Challenge19C/validation-text.txt
-/home/perry/Documents/programming/cpp-coursework/Challenge19C/romeo-and-juliet.txt
+/home/perry/Documents/programming/cpp-coursework/Challenge19D/rj-target.txt
+/home/perry/Documents/programming/cpp-coursework/Challenge19D/main.cpp
 /home/perry/Documents/programming/cpp-coursework/Challenge19C/main.cpp
+/home/perry/Documents/programming/cpp-coursework/Challenge19C/romeo-and-juliet.txt
+/home/perry/Documents/programming/cpp-coursework/Challenge19C/validation-text.txt
 /home/perry/Documents/programming/cpp-coursework/Challenge1/main.cpp
 /home/perry/Documents/programming/cpp-coursework/Challenge13/main.cpp
 /home/perry/Documents/programming/cpp-coursework/Challenge13/Movie.h

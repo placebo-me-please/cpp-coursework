@@ -2,7 +2,29 @@
 <Session Name="/home/perry/Documents/programming/cpp-coursework/CPPCourseWorkspace.workspace">
   <int Value="0" Name="m_selectedTab"/>
   <wxString Value="/home/perry/Documents/programming/cpp-coursework/CPPCourseWorkspace.workspace" Name="m_workspaceName"/>
-  <TabInfoArray Name="TabInfoArray"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge19C/main.cpp" Name="FileName"/>
+      <int Value="30" Name="FirstVisibleLine"/>
+      <int Value="48" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge19C/romeo-and-juliet.txt" Name="FileName"/>
+      <int Value="165" Name="FirstVisibleLine"/>
+      <int Value="165" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/perry/Documents/programming/cpp-coursework/Challenge19C/validation-text.txt" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="6" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
   <SerializedObject Name="m_breakpoints">
     <long Value="0" Name="Count"/>
   </SerializedObject>
